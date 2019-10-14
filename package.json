@@ -1,0 +1,22 @@
+{
+  "name": "heroesprofile-api",
+  "version": "0.1.0",
+  "description": "A simple node js wrapper for the Heroes Profile API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint . --fix"
+  },
+  "author": "Astraeus-",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.5.1",
+    "mocha": "^6.2.1"
+  }
+}
