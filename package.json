@@ -9,6 +9,9 @@
     "eslint:fix": "eslint . --fix"
   },
   "author": "Astraeus-",
+  "bugs": {
+    "url": "https://github.com/Astraeus-/heroesprofile-api/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": ">=8.7.0"
