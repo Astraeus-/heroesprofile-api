@@ -1,4 +1,4 @@
-# heroeslounge-api
+# heroesprofile-api
 A simple node.js wrapper for the Heroes Profile API.
 
 Website URL: https://api.heroesprofile.com/
