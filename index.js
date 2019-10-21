@@ -151,18 +151,18 @@ class Client {
 
   /**
      * Returns all hero stats
-     * @param {String} battletag Player battletag
      * @param {String} hero Hero name
      * @param {Integer} season NGS season
      * @param {String} division NGS division
+     * @param {String} [battletag] Player battletag
      */
-  getNGSPlayerHeroStat(battletag, hero, season, division) {
-    return this.requesthandler.request('GET', endpoints.NGS_PLAYER_HERO_STAT(), {
-      battletag: battletag,
-      region: 1,
+  getNGSPlayerHeroStat(hero, season, division, battletag) {
+    return this.requesthandler.request('GET', endpoints.NGS_HERO_STAT(), {
       hero: hero,
       season: season,
-      division: division
+      division: division,
+      region: 1,
+      battletag: battletag
     });
   }
 

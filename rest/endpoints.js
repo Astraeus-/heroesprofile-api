@@ -29,27 +29,27 @@ module.exports.MAPS = () => {
 };
 
 module.exports.NGS_LEADERBOARD_HIGHEST_AVERAGE_STAT = () => {
-  return '​/NGS​/Leaderboard​/Highest​/Average​/Stat';
+  return '/NGS/Leaderboard/Highest/Average/Stat';
 };
 
 module.exports.NGS_LEADERBOARD_HIGHEST_TOTAL_STAT = () => {
-  return '​/NGS​/Leaderboard​/Highest​/Total/Stat';
+  return '/NGS/Leaderboard/Highest/Total/Stat';
 };
 
-module.exports.NGS_PLAYER_HERO_STAT = () => {
-  return '​/NGS​/Leaderboard​/Player/Hero/Stat';
+module.exports.NGS_HERO_STAT = () => {
+  return '/NGS/Hero/Stat';
 };
 
 module.exports.NGS_PLAYER_PROFILE = () => {
-  return '​/NGS​/Leaderboard​/Player/Profile';
+  return '/NGS/Player/Profile';
 };
 
 module.exports.NGS_PLAYER_MMR = () => {
-  return '​/NGS​/Leaderboard​/Player/MMR';
+  return '/NGS/Leaderboard/Player/MMR';
 };
 
 module.exports.NGS_UPLOAD = () => {
-  return '​/NGS​/Games​/Upload​/';
+  return 'NGS/Games/Upload/';
 };
 
 module.exports.PATCHES = () => {

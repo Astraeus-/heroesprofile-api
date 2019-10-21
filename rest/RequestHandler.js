@@ -134,7 +134,7 @@ class RequestHandler {
 
   validatePayload(payload) {
     if (payload['hero']) {
-      const hero = payload['hero'];     
+      const hero = payload['hero'];
 
       if (!Heroes.find(h => h === hero)) {
         return `Invalid hero: ${hero}`;
