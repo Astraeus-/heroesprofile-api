@@ -79,6 +79,9 @@ class RequestHandler {
                 cb();
                 resolve(response);
               }
+            } else if (res.statusCode === 403) {
+              cb();
+              reject(Error(`Status Code: ${res.statusCode}: Invalid input or no data for request`));
             } else if (res.statusCode === 429) {
               if (res.headers['retry-after']) {
                 setTimeout(() => {
@@ -89,7 +92,7 @@ class RequestHandler {
               }
             } else {
               cb();
-              reject(Error(`Status Code: ${res.statusCode}: Error completing request for ${endpoint}/?token=token${queryString}`));
+              reject(Error(`Status Code: ${res.statusCode}: Could not complete request for ${endpoint}/?token=token${queryString}`));
             }
           });
         });
