@@ -37,9 +37,8 @@ class RequestHandler {
     }
     
     // Create and append the query string to the path.
+    let queryString = '';
     if (method === 'GET') {
-      let queryString = '';
-
       if (payload) {
         Object.keys(payload).forEach((key) => {
           if (payload[key] !== undefined) {
@@ -90,8 +89,8 @@ class RequestHandler {
               }
             } else {
               cb();
-              reject(Error(`Status Code: ${res.statusCode}: Error completing request for ${options.path}`));
-            }            
+              reject(Error(`Status Code: ${res.statusCode}: Error completing request for ${endpoint}/?token=token${queryString}`));
+            }
           });
         });
     
