@@ -1,6 +1,6 @@
 {
   "name": "heroesprofile-api",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple node js wrapper for the Heroes Profile API",
   "main": "index.js",
   "scripts": {
